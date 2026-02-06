@@ -1,0 +1,14 @@
+{
+  "name": "electron-type-stripping-test",
+  "version": "1.0.0",
+  "description": "Simple TypeScript type stripping test",
+  "main": "main.ts",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Niklas Wenzel <dev@nikwen.de>",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "40.2.1"
+  }
+}
