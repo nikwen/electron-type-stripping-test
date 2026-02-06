@@ -1,9 +1,13 @@
 import { app, BrowserWindow } from 'electron';
+import path from 'node:path';
 
 const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
+    webPreferences: {
+      preload: path.join(import.meta.dirname, 'preload.ts'),
+    },
   });
 
   mainWindow.loadURL('https://www.electronjs.org/');
