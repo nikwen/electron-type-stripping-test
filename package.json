@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple TypeScript type stripping test",
   "main": "main.ts",
+  "type": "module",
   "scripts": {
     "start": "electron ."
   },
