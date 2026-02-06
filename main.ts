@@ -11,7 +11,7 @@ const createWindow = (): void => {
     },
   });
 
-  mainWindow.loadURL('https://www.electronjs.org/');
+  mainWindow.loadFile(path.join(import.meta.dirname, 'index.html'));
 };
 
 app.whenReady().then(() => {
