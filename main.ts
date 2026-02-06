@@ -7,6 +7,7 @@ const createWindow = (): void => {
     height: 800,
     webPreferences: {
       preload: path.join(import.meta.dirname, 'preload.ts'),
+      sandbox: false,
     },
   });
 
