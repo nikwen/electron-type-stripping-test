@@ -1,5 +1,10 @@
 import { app, BrowserWindow } from 'electron';
 
+enum Environment {
+  development = 'development',
+  production = 'production',
+}
+
 const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
     width: 1200,
